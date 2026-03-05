@@ -182,7 +182,6 @@
             }
           },
           "block_order": [
-            "collection-card-image",
             "collection_title_sc"
           ]
         }
