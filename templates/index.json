@@ -188,8 +188,7 @@
         }
       },
       "block_order": [
-        "heading_edits",
-        "static-collection-card"
+        "heading_edits"
       ],
       "name": "Featured Edits",
       "settings": {
