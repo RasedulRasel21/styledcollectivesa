@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "hero_sc": {
       "type": "media-with-content",
@@ -16,6 +17,8 @@
           "static": true,
           "settings": {
             "media_type": "image",
+            "image": "shopify://shop_images/hero-image-DlSzyDkL.jpg",
+            "link": "",
             "video_loop": true,
             "video_autoplay": false,
             "image_position": "cover",
@@ -36,7 +39,7 @@
               "type": "text",
               "name": "Heading",
               "settings": {
-                "text": "<h1>Elevated Edits by Influencers You Trust</h1>",
+                "text": "<h1>Curated fashion, beauty and lifestyle edits from creators you trust.</h1>",
                 "width": "fit-content",
                 "max_width": "narrow",
                 "alignment": "left",
@@ -87,7 +90,7 @@
         "media_height": "80svh",
         "section_width": "page-width",
         "extend_media": true,
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
@@ -138,23 +141,6 @@
             "border_radius": 0
           },
           "blocks": {
-            "collection-card-image": {
-              "type": "_collection-card-image",
-              "name": "Collection Image",
-              "static": true,
-              "settings": {
-                "image_ratio": "portrait",
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0
-              },
-              "blocks": {}
-            },
             "collection_title_sc": {
               "type": "collection-title",
               "name": "Collection Title",
@@ -179,6 +165,23 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "collection-card-image": {
+              "type": "_collection-card-image",
+              "name": "Collection Image",
+              "static": true,
+              "settings": {
+                "image_ratio": "portrait",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0
+              },
+              "blocks": {}
             }
           },
           "block_order": [
@@ -191,19 +194,25 @@
       ],
       "name": "Featured Edits",
       "settings": {
+        "collection_list": [
+          "carmens-edit",
+          "graces-edit",
+          "mias-edit"
+        ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "columns": 3,
         "mobile_columns": "1",
         "mobile_card_size": "80cqw",
         "columns_gap": 24,
+        "bento_gap": 8,
         "rows_gap": 16,
         "max_collections": 3,
         "icons_style": "none",
         "icons_shape": "none",
         "section_width": "page-width",
         "gap": 40,
-        "color_scheme": "",
+        "color_scheme": "scheme-3",
         "padding-block-start": 80,
         "padding-block-end": 80
       }
@@ -313,7 +322,6 @@
               "type": "_product-card-group",
               "name": "Card Info",
               "settings": {
-                "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
@@ -329,7 +337,7 @@
                 "height": "fit",
                 "custom_height": 100,
                 "inherit_color_scheme": false,
-                "color_scheme": "",
+                "color_scheme": "scheme-2",
                 "background_media": "none",
                 "video_position": "cover",
                 "background_image_position": "cover",
@@ -341,6 +349,8 @@
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
                 "padding-block-start": 10,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -377,6 +387,7 @@
                   "name": "Shop Now",
                   "settings": {
                     "label": "Shop Now",
+                    "link": "",
                     "open_in_new_tab": true,
                     "style_class": "link",
                     "width": "fit-content",
@@ -401,7 +412,7 @@
       },
       "name": "Featured Products",
       "settings": {
-        "collection": "all",
+        "collection": "carmens-edit",
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "max_products": 4,
@@ -415,7 +426,7 @@
         "section_width": "page-width",
         "horizontal_alignment": "flex-start",
         "gap": 40,
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "padding-block-start": 80,
         "padding-block-end": 80
       }

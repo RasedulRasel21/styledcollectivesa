@@ -6,68 +6,18 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
-    "section": {
-      "type": "section",
-      "blocks": {
-        "text_tqQTNE": {
-          "type": "text",
-          "name": "Title",
-          "settings": {
-            "text": "<h1>{{ closest.collection.title }}</h1>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h2",
-            "font": "var(--font-primary--family)",
-            "font_size": "",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_tqQTNE"
-      ],
-      "name": "Collection heading",
+    "influencer_header": {
+      "type": "collection-influencer-header",
+      "name": "Influencer Header",
       "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
+        "instagram_handle": "",
         "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-1",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 40
+        "color_scheme": "scheme-2",
+        "padding-block-start": 48,
+        "padding-block-end": 48
       }
     },
     "main": {
@@ -131,7 +81,6 @@
             "group": {
               "type": "_product-card-group",
               "settings": {
-                "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
@@ -159,6 +108,8 @@
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -240,23 +191,25 @@
         }
       },
       "settings": {
-        "layout_type": "organic",
+        "layout_type": "grid",
         "product_card_size": "medium",
         "mobile_product_card_size": "small",
+        "enable_infinite_scroll": true,
+        "products_per_page": 24,
         "product_grid_width": "centered",
         "full_width_on_mobile": true,
         "columns_gap_horizontal": 16,
         "columns_gap_vertical": 16,
         "padding-inline-start": 0,
         "padding-inline-end": 0,
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "padding-block-start": 40,
         "padding-block-end": 40
       }
     }
   },
   "order": [
-    "section",
+    "influencer_header",
     "main"
   ]
 }
